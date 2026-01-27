@@ -14,6 +14,8 @@ gen/
 logs/
 proguard_cache/
 target/
+build/
+.gradle/
 tmp/
 
 # Local configuration file (sdk path, etc)

@@ -1,14 +1,22 @@
-[![Java CI with Maven](https://github.com/lucformalmethodscourse/lifoqueue-jqwik-maven/actions/workflows/maven.yml/badge.svg)](https://github.com/lucformalmethodscourse/lifoqueue-jqwik-maven/actions/workflows/maven.yml)
+[![Java CI with Gradle](https://github.com/lucformalmethodscourse/lifoqueue-jqwik-maven/actions/workflows/gradle.yml/badge.svg)](https://github.com/lucformalmethodscourse/lifoqueue-jqwik-maven/actions/workflows/gradle.yml)
 
 ## Stateful unit testing using Jqwik actions
 
 This project provides an example of stateful unit testing with and without [jqwik](https://jqwik.net/).
 
-## Running the tests
+## Build System
 
-You can run the tests using
+This project has been migrated to Gradle while maintaining Maven compatibility. See [doc/GRADLE-MIGRATION.md](doc/GRADLE-MIGRATION.md) for complete migration details and command reference.
 
-    mvn test
+### Quick Start with Gradle
+
+```bash
+# Run tests (including jqwik property-based tests)
+./gradlew test
+
+# Run tests with coverage verification
+./gradlew check
+```
 
 ## References
 
