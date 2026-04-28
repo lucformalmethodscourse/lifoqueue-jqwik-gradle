@@ -20,4 +20,4 @@ This project has been migrated to Gradle while maintaining Maven compatibility. 
 
 ## References
 
-- [java.util.Queue interface](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Queue.html)
+- [java.util.Queue interface](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Queue.html)

@@ -1,3 +1,7 @@
+require(JavaVersion.current() >= JavaVersion.VERSION_21) {
+    "This project requires Java 21 or newer (found ${JavaVersion.current()})"
+}
+
 plugins {
     java
     jacoco
@@ -5,12 +9,6 @@ plugins {
 
 group = "edu.luc.cs"
 version = "1.0-SNAPSHOT"
-
-java {
-    toolchain {
-        languageVersion.set(JavaLanguageVersion.of(21))
-    }
-}
 
 repositories {
     mavenCentral()
@@ -31,7 +29,7 @@ tasks.test {
 }
 
 jacoco {
-    toolVersion = "0.8.12"
+    toolVersion = "0.8.13"
 }
 
 tasks.jacocoTestReport {
